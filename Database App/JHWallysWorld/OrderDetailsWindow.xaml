@@ -1,0 +1,24 @@
+﻿<!--
+FILE: OrderDetailsWindow.xaml
+PROJECT: Relational Databases - Wally's World A4
+PROGRAMMERS: Jacob Huras
+DESCRIPTION:
+    This file controls the layout of the OrderDetailsWindow.
+-->
+    
+    <Window x:Class="JHWallysWorld.OrderDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JHWallysWorld"
+        mc:Ignorable="d"
+        Title="Order Details" Height="400" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="cancelButton" Content="CANCEL" Margin="10,0,0,12" FontWeight="Bold" Click="cancelButton_Click" Height="64" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="170" FontSize="24" IsEnabled="False"/>
+        <Button x:Name="refundButton" Content="REFUND" Margin="0,0,10,12" FontWeight="Bold" Click="refundButton_Click" Height="64" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="170" FontSize="24" IsEnabled="False"/>
+        <ScrollViewer x:Name="messageScrollViewer" Margin="10,10,10,81" VerticalScrollBarVisibility="Auto">
+            <TextBox x:Name="messageTextBox" TextWrapping="Wrap" FontFamily="Consolas"/>
+        </ScrollViewer>
+    </Grid>
+</Window>
